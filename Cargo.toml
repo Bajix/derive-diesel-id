@@ -1,0 +1,18 @@
+[package]
+name = "derive-id"
+version = "0.1.6"
+edition = "2018"
+description = "Simple NewType ID's specifically tailored to integrate with Async GraphQL and Diesel"
+readme = "README.md"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-graphql = "2.9.2"
+derive_more = "0.99.14"
+diesel-derive-newtype = "0.1.2"
+serde = "1.0.126"
+
+[dev-dependencies]
+diesel = "1.4.7"
