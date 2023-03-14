@@ -9,10 +9,10 @@ license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-async-graphql = "2.9.2"
-derive_more = "0.99.14"
-diesel-derive-newtype = "0.1.2"
-serde = "1.0.126"
+async-graphql = "5"
+derive_more = "0.99.17"
+diesel-derive-newtype = "2.0.0-rc.0"
+serde = "1"
 
 [dev-dependencies]
-diesel = "1.4.7"
+diesel = "2"

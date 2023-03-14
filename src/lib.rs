@@ -59,15 +59,15 @@ mod tests {
 
 	derive_id! {
 		#[derive(Identifiable)]
-		#[table_name = "users"]
+		#[diesel(table_name = users)]
 		#[graphql(name = "UserID")]
-		pub struct UserId(#[column_name = "id"] i32);
+		pub struct UserId(#[diesel(column_name = "id")] i32);
 	}
 
 	derive_id! {
 		#[derive(Identifiable)]
-		#[table_name = "content"]
+		#[diesel(table_name = content)]
 		#[graphql(name = "ContentID")]
-		pub struct ContentId(#[column_name = "id"] i32);
+		pub struct ContentId(#[diesel(column_name = "id")] i32);
 	}
 }
