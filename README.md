@@ -9,8 +9,8 @@ A one size fits some NewType ID derive specifically tailored to integrate with A
 ```rust
 	derive_id! {
 		#[derive(Identifiable)]
-		#[table_name = "content"]
+		#[diesel(table_name = content)]
 		#[graphql(name = "ContentID")]
-		pub struct ContentId(#[column_name = "id"] i32);
+		pub struct ContentId(#[diesel(column_name = "id")] i32);
 	}
 ```
